@@ -68,3 +68,33 @@ letter-spacing: 0.2em;
 
     border: 1px solid #00dfc4;
 }
+
+a{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transform: 0.5s;
+}
+a:hover{
+    letter-spacing: 0.25em;
+}
+a::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #272827;
+}
+a span{
+    position: relative;
+    z-index: 1;
+}
+a i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
